@@ -24,10 +24,11 @@ if linkage != nil
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
   use_frameworks! :linkage => linkage.to_sym
 end
-
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://gitlab.com/phyreapp/ios-specs.git'
 target 'WeavrInAppProvisioningTestApp' do
   config = use_native_modules!
-
+  pod 'ApplePayProvisioning', '>=1.0.0'
   # Flags change depending on the env values.
   flags = get_default_flags()
 
@@ -58,5 +59,12 @@ target 'WeavrInAppProvisioningTestApp' do
       :mac_catalyst_enabled => false
     )
     __apply_Xcode_12_5_M1_post_install_workaround(installer)
+    installer.pods_project.targets.each do |t|
+			t.build_configurations.each do |config|
+				# config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+				config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+				config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64 i386"
+			end
+		end
   end
 end
