@@ -2016,10 +2016,10 @@
     "@typescript-eslint/types" "5.62.0"
     eslint-visitor-keys "^3.3.0"
 
-"@weavr-io/push-provisioning-react-native@^1.0.1":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@weavr-io/push-provisioning-react-native/-/push-provisioning-react-native-1.0.2.tgz#95eabac425dea862b9d7797c1064046ab2221058"
-  integrity sha512-ami7nBbO78hU7I5SL3B+05F3qpT1m03cHbFJZVwVuLAwzD9iulvw41v1qw9/oSiKg17fdyZOIahdq2h3H3BbfQ==
+"@weavr-io/push-provisioning-react-native@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/@weavr-io/push-provisioning-react-native/-/push-provisioning-react-native-1.0.3.tgz#7ded60ca6cfd3d721dfe23ec1b934ae260b477e1"
+  integrity sha512-MfJJc7fz7COaOFzCOSh3N53JsCIT+cNGR/U1dKt4ZM+u6A0LyrvHDPBpnOwRqhBLsy1+5mQQz5iWxjocB02bzw==
 
 abort-controller@^3.0.0:
   version "3.0.0"

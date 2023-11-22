@@ -5,7 +5,7 @@ require Pod::Executable.execute_command('node', ['-p',
     {paths: [process.argv[1]]},
   )', __dir__]).strip
 
-platform :ios, min_ios_version_supported
+platform :ios, 13
 prepare_react_native_project!
 
 # If you are using a `react-native-flipper` your iOS build will fail when `NO_FLIPPER=1` is set.
@@ -28,7 +28,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://gitlab.com/phyreapp/ios-specs.git'
 target 'WeavrInAppProvisioningTestApp' do
   config = use_native_modules!
-  pod 'ApplePayProvisioning', '>=1.0.0'
   # Flags change depending on the env values.
   flags = get_default_flags()
 
@@ -76,9 +75,9 @@ target 'WeavrInAppProvisioningTestApp' do
        config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
        end
   #    config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
-      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64 i386"
-      if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 11.0
-       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "i386"
+      if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 13.0
+       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
       end
      end
     end
