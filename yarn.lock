@@ -2016,6 +2016,10 @@
     "@typescript-eslint/types" "5.62.0"
     eslint-visitor-keys "^3.3.0"
 
+"@weavr-io/push-provisioning-react-native@https://github.com/weavr-io/mobile-sdk-provisioning-react-native.git#DEV-7210-k-1.6.0":
+  version "0.1.1-3"
+  resolved "https://github.com/weavr-io/mobile-sdk-provisioning-react-native.git#bac222c3eeb402a680ea4f9266c5f5a173f99007"
+
 abort-controller@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/abort-controller/-/abort-controller-3.0.0.tgz#eaf54d53b62bae4138e809ca225c8439a6efb392"

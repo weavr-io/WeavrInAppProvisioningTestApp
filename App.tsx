@@ -5,7 +5,8 @@
  * @format
  */
 
-import React from 'react';
+import {canAddCardToWallet} from '@weavr-io/push-provisioning-react-native';
+import React, {useEffect} from 'react';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -61,6 +62,12 @@ function App(): JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+  useEffect(() => {
+    // Perform a card status check to see if card can be added
+    canAddCardToWallet('6751', 'mastercard').then(res => {
+      console.log(res);
+    });
+  }, []);
 
   return (
     <SafeAreaView style={backgroundStyle}>

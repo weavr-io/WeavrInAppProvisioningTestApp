@@ -28,7 +28,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 source 'https://gitlab.com/phyreapp/ios-specs.git'
 target 'WeavrInAppProvisioningTestApp' do
   config = use_native_modules!
-  pod 'ApplePayProvisioning', '>=1.0.0'
   # Flags change depending on the env values.
   flags = get_default_flags()
 
@@ -79,4 +78,5 @@ target 'WeavrInAppProvisioningTestApp' do
 			end
 		end
   end
+end
 end
