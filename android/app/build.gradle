@@ -1,5 +1,6 @@
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
+// apply plugin: "org.jetbrains.kotlin.android"
 
 /**
  * This is the configuration block to customize your React Native Android app.
@@ -88,6 +89,12 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('/Users/tareq/Library/Mobile Documents/com~apple~CloudDocs/wpp_rn_test/my_release_keystore.jks')
+            storePassword 'Pass1234!'
+            keyAlias 'tareq'
+            keyPassword 'Pass1234!'
+        }
     }
     buildTypes {
         debug {
@@ -96,11 +103,17 @@ android {
         release {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+
+//     configurations {
+//     compileClasspath {
+//       resolutionStrategy.force "com.phyreapp:phyre-gpay:3.0.3-api33"
+//     }
+// }
 }
 
 dependencies {
