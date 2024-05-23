@@ -54,7 +54,7 @@ react {
 /**
  * Set this to true to Run Proguard on Release builds to minify the Java bytecode.
  */
-def enableProguardInReleaseBuilds = false
+def enableProguardInReleaseBuilds = true
 
 /**
  * The preferred build flavor of JavaScriptCore (JSC)
@@ -132,8 +132,8 @@ dependencies {
     } else {
         implementation jscFlavor
     }
-    implementation "com.phyreapp:phyre-gpay:3.0.3-api33"
-    implementation 'com.google.android.gms:play-services-tapandpay:18.2.0'
+     implementation "com.phyreapp:phyre-gpay:4.0.4"
+    implementation 'com.google.android.gms:play-services-tapandpay:18.3.3'
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
