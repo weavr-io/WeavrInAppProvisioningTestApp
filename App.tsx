@@ -34,6 +34,13 @@ function App(): JSX.Element {
   useEffect(() => {
     initWPP(token);
 
+    checkGooglePayAvailability().then((res: GooglePayCheckResult) => {
+      if (res.errorMessage) {
+        console.log(res.errorMessage);
+        return;
+      }
+      console.log('Google Pay is available: ' + res.isAvailable);
+    });
     // Perform a card status check to see if card can be added
     canAddCardToWallet('6751', 'mastercard').then(res => {
       console.log(res);
