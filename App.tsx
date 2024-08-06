@@ -15,11 +15,13 @@ import {
 import React, {useEffect} from 'react';
 import {
   Alert,
+  Button,
   Image,
   SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
+  View,
   useColorScheme,
 } from 'react-native';
 
@@ -41,11 +43,18 @@ function App(): JSX.Element {
       }
       console.log('Google Pay is available: ' + res.isAvailable);
     });
+  }, []);
+
+  const canAddToWallet = async () => {
+    console.log('Checking for Can Add to Wallet');
+
     // Perform a card status check to see if card can be added
     canAddCardToWallet('6751', 'mastercard').then(res => {
       console.log(res);
+      Alert.alert('Can Add to Wallet', res);
     });
-  }, []);
+  };
+
   const asset = require('./assets/Add-to-Google-Pay-Button-dark-no-shadow.png');
   const assetSource = Image.resolveAssetSource(asset);
   const token =
@@ -60,6 +69,10 @@ function App(): JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
+
+        <View style={{width: '65%', alignSelf: 'center'}}>
+          <Button title="Can Add To Wallet" onPress={canAddToWallet} />
+        </View>
         <AddToWalletButton
           androidAssetSource={assetSource}
           iOSButtonStyle="onLightBackground"
