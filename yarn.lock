@@ -2018,7 +2018,7 @@
 
 "@weavr-io/push-provisioning-react-native@https://github.com/weavr-io/mobile-sdk-provisioning-react-native.git#DEV-8226-react-native-i-os-wallet-extension-update":
   version "2.1.0"
-  resolved "https://github.com/weavr-io/mobile-sdk-provisioning-react-native.git#eabe138bb35b13b13d9e39a24b77bb31c6e8648b"
+  resolved "https://github.com/weavr-io/mobile-sdk-provisioning-react-native.git#7a7e3dd60d8ee2ffeed2fb8e8521e043c0d66496"
 
 abort-controller@^3.0.0:
   version "3.0.0"

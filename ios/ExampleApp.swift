@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import weavr_react_native
+// import weavr_react_native
 @available(iOS 14.0, *)
 class ExampleApp{
   

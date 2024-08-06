@@ -49,7 +49,7 @@ function App(): JSX.Element {
     console.log('Checking for Can Add to Wallet');
 
     // Perform a card status check to see if card can be added
-    canAddCardToWallet('6751', 'mastercard').then(res => {
+    canAddCardToWallet('6751', 'mastercard', 'phone').then(res => {
       console.log(res);
       Alert.alert('Can Add to Wallet', res);
     });
