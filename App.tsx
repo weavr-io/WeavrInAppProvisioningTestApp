@@ -57,8 +57,7 @@ function App(): JSX.Element {
 
   const asset = require('./assets/Add-to-Google-Pay-Button-dark-no-shadow.png');
   const assetSource = Image.resolveAssetSource(asset);
-  const token =
-    'eyJraWQiOiJnZW5lcmF0b3IiLCJhbGciOiJFUzI1NiJ9.eyJTWVNURU0iOiJmYWxzZSIsInN1YiI6IlJPT1QsMTA0MTg4Mjg1NzI1Mzc2NTIxIiwiVE9LRU5fUFJPVklERVIiOiJFTUFJTF9BTkRfUEFTU1dPUkQiLCJSQU5ET00iOiItMjM5MjI4MjQxNDgzMTQ2MDEzNCIsIklERU5USVRZX0lEIjoiMTA0MTg4Mjg1NzI1Mzc2NTIxIiwiSURFTlRJVFlfVFlQRSI6ImNvbnN1bWVycyIsIlBFUlBFVFVBTCI6ImZhbHNlIiwiVE9LRU5fVFlQRSI6IkFDQ0VTUyIsIlRFTkFOVF9JRCI6IjIiLCJJTVBFUlNPTkFUT1JfU0VTU0lPTl9JRCI6IjAiLCJTRVNTSU9OX0lEIjoiMTExMjYxOTA0NzkzMzA1MTA0IiwiUFJPR1JBTU1FX0lEIjoiMTAzMDc5MDg4NjU2MjIwMTY4IiwiREVWSUNFX0lEIjoiIiwiSU1QRVJTT05BVEVEIjoiZmFsc2UiLCJBVVRIX0dST1VQX0lEIjoiIn0.KkbylGKxLUIjWuP05s47kyPxLB1pNiLoE5_gdMoQqtRbz_wKOF-RKRezXFs3EQSPJA2wD4NGmkaQELcXfckyWA';
+  const token = '<token>';
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar
@@ -84,11 +83,11 @@ function App(): JSX.Element {
           androidAssetSource={assetSource}
           iOSButtonStyle="onLightBackground"
           style={styles.payButton}
-          cardHolderName={'<cardholderNames>'}
-          cardDescription="<cardDescription>"
-          cardLastFour={'<panLastFour>'}
-          cardBrand={'<cardBrand>'}
-          cardId={'<cardToken>'}
+          cardHolderName={'Gordon Farrugia'}
+          cardDescription="test iOS wallet extension"
+          cardLastFour={'0049'}
+          cardBrand={'mastercard'}
+          cardId={'111261918672650256'}
           authenticationToken={token}
           // debug
           onComplete={({error}) => {

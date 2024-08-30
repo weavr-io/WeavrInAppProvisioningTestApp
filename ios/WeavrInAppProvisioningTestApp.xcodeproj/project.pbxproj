@@ -12,9 +12,6 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		452258222C8076A2002275E3 /* IssuerAuthorizationExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452258212C8076A2002275E3 /* IssuerAuthorizationExtensionHandler.swift */; };
-		452258842C808200002275E3 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452258832C808200002275E3 /* IntentHandler.swift */; };
-		4522588E2C808201002275E3 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4522588D2C808201002275E3 /* IntentViewController.swift */; };
-		452258912C808201002275E3 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4522588F2C808201002275E3 /* MainInterface.storyboard */; };
 		452258952C808201002275E3 /* WalletExtensionUI.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 4522588A2C808201002275E3 /* WalletExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		452258982C808202002275E3 /* WalletExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 452258802C808200002275E3 /* WalletExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		452258A02C80821B002275E3 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4522589F2C80821B002275E3 /* PassKit.framework */; };
@@ -84,21 +81,8 @@
 		4522583C2C8081A9002275E3 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		4522583E2C8081A9002275E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		452258442C8081A9002275E3 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
-		452258472C8081A9002275E3 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
-		4522584A2C8081A9002275E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		4522584C2C8081A9002275E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		452258602C8081DE002275E3 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
-		452258622C8081DE002275E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4522586A2C8081DF002275E3 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
-		4522586D2C8081DF002275E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		4522586F2C8081DF002275E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		452258802C808200002275E3 /* WalletExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WalletExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		452258832C808200002275E3 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
-		452258852C808200002275E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4522588A2C808201002275E3 /* WalletExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WalletExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		4522588D2C808201002275E3 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
-		452258902C808201002275E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		452258922C808201002275E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4522589F2C80821B002275E3 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		452258A22C808566002275E3 /* WalletExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WalletExtension.entitlements; sourceTree = "<group>"; };
 		452258A32C80858C002275E3 /* WalletExtensionUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WalletExtensionUI.entitlements; sourceTree = "<group>"; };
@@ -215,54 +199,6 @@
 			path = WalletExtensionUI;
 			sourceTree = "<group>";
 		};
-		452258462C8081A9002275E3 /* WalletExtensionUIUI */ = {
-			isa = PBXGroup;
-			children = (
-				452258472C8081A9002275E3 /* IntentViewController.swift */,
-				452258492C8081A9002275E3 /* MainInterface.storyboard */,
-				4522584C2C8081A9002275E3 /* Info.plist */,
-			);
-			path = WalletExtensionUIUI;
-			sourceTree = "<group>";
-		};
-		4522585F2C8081DE002275E3 /* WalletExtensionUI */ = {
-			isa = PBXGroup;
-			children = (
-				452258602C8081DE002275E3 /* IntentHandler.swift */,
-				452258622C8081DE002275E3 /* Info.plist */,
-			);
-			path = WalletExtensionUI;
-			sourceTree = "<group>";
-		};
-		452258692C8081DF002275E3 /* WalletExtensionUIUI */ = {
-			isa = PBXGroup;
-			children = (
-				4522586A2C8081DF002275E3 /* IntentViewController.swift */,
-				4522586C2C8081DF002275E3 /* MainInterface.storyboard */,
-				4522586F2C8081DF002275E3 /* Info.plist */,
-			);
-			path = WalletExtensionUIUI;
-			sourceTree = "<group>";
-		};
-		452258822C808200002275E3 /* WalletExtension */ = {
-			isa = PBXGroup;
-			children = (
-				452258832C808200002275E3 /* IntentHandler.swift */,
-				452258852C808200002275E3 /* Info.plist */,
-			);
-			path = WalletExtension;
-			sourceTree = "<group>";
-		};
-		4522588C2C808201002275E3 /* WalletExtensionUI */ = {
-			isa = PBXGroup;
-			children = (
-				4522588D2C808201002275E3 /* IntentViewController.swift */,
-				4522588F2C808201002275E3 /* MainInterface.storyboard */,
-				452258922C808201002275E3 /* Info.plist */,
-			);
-			path = WalletExtensionUI;
-			sourceTree = "<group>";
-		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,11 +214,6 @@
 				00E356EF1AD99517003FC87E /* WeavrInAppProvisioningTestAppTests */,
 				4522582A2C80818B002275E3 /* WalletExtension */,
 				4522583B2C8081A9002275E3 /* WalletExtensionUI */,
-				452258462C8081A9002275E3 /* WalletExtensionUIUI */,
-				4522585F2C8081DE002275E3 /* WalletExtensionUI */,
-				452258692C8081DF002275E3 /* WalletExtensionUIUI */,
-				452258822C808200002275E3 /* WalletExtension */,
-				4522588C2C808201002275E3 /* WalletExtensionUI */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -470,7 +401,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				452258912C808201002275E3 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,7 +580,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				452258842C808200002275E3 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +587,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4522588E2C808201002275E3 /* IntentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,33 +609,6 @@
 			targetProxy = 452258962C808202002275E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		452258492C8081A9002275E3 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4522584A2C8081A9002275E3 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-		4522586C2C8081DF002275E3 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4522586D2C8081DF002275E3 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-		4522588F2C808201002275E3 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				452258902C808201002275E3 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
@@ -767,7 +668,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F73BBBDB5880D32F80A8B527 /* Pods-WeavrInAppProvisioningTestApp.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = WeavrInAppProvisioningTestApp/WeavrInAppProvisioningTestApp.entitlements;
@@ -804,7 +704,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5962733D9CAD9FB628C68C8 /* Pods-WeavrInAppProvisioningTestApp.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = WeavrInAppProvisioningTestApp/WeavrInAppProvisioningTestApp.entitlements;
