@@ -73,15 +73,22 @@ function App(): JSX.Element {
         <View style={{width: '65%', alignSelf: 'center'}}>
           <Button title="Can Add To Wallet" onPress={canAddToWallet} />
         </View>
+        {/*
+            cardholderNames - String representing the names of the cardholder
+            panLastFour - String representing the last four digits of the payment card number
+            cardDescription - A meaningful description of the card. This description is visible in the Apple wallet when the provisioning process is started
+            cardToken - String that uniquely identifies the card
+            cardImage - CGImage representing the unique card artwork shown when the provisioning process is started
+        */}
         <AddToWalletButton
           androidAssetSource={assetSource}
           iOSButtonStyle="onLightBackground"
           style={styles.payButton}
-          cardHolderName={'Gordon Farrugia'}
-          cardDescription="Description"
-          cardLastFour={'6571'}
-          cardBrand={'mastercard'}
-          cardId={'111261918672650256'}
+          cardHolderName={'<cardholderNames>'}
+          cardDescription="<cardDescription>"
+          cardLastFour={'<panLastFour>'}
+          cardBrand={'<cardBrand>'}
+          cardId={'<cardToken>'}
           authenticationToken={token}
           // debug
           onComplete={({error}) => {
