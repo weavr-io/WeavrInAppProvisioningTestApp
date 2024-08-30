@@ -43,7 +43,7 @@ allprojects {
     name = "GitLab"
     credentials(HttpHeaderCredentials) {
       name = "Private-Token"
-      value = "glpat-Sh_5php2a4wMBMyJawXN"
+      value = "<private token goes here>"
     }
     authentication {
       create("header", HttpHeaderAuthentication)

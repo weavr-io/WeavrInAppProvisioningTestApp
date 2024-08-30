@@ -83,11 +83,11 @@ function App(): JSX.Element {
           androidAssetSource={assetSource}
           iOSButtonStyle="onLightBackground"
           style={styles.payButton}
-          cardHolderName={'Gordon Farrugia'}
+          cardHolderName={'<card holder name>'}
           cardDescription="test iOS wallet extension"
-          cardLastFour={'0049'}
+          cardLastFour={'<panLastFour>'}
           cardBrand={'mastercard'}
-          cardId={'111261918672650256'}
+          cardId={'<cardToken>'}
           authenticationToken={token}
           // debug
           onComplete={({error}) => {
