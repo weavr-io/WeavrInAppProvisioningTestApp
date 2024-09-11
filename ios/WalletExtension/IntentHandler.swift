@@ -6,6 +6,7 @@
 //
 
 import Intents
+import weavr_react_na
 
 // As an example, this class is set up to handle Message intents.
 // You will want to replace this or add other intents as appropriate.

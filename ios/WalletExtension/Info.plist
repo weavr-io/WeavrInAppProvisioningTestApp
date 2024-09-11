@@ -16,9 +16,9 @@
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.intents-service</string>
+		<string>com.apple.PassKit.issuer-provisioning</string>
 		<key>NSExtensionPrincipalClass</key>
-		<string>$(PRODUCT_MODULE_NAME).IntentHandler</string>
+		<string>$(PRODUCT_MODULE_NAME).IssuerExtensionHandler</string>
 	</dict>
 </dict>
 </plist>

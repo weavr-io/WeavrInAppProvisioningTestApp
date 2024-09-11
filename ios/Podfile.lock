@@ -427,7 +427,7 @@ PODS:
     - React-logger (= 0.72.3)
     - React-perflogger (= 0.72.3)
   - SocketRocket (0.6.1)
-  - weavr-react-native (2.1.0):
+  - weavr-react-native (2.3.0):
     - ApplePayProvisioning (= 5.0.0)
     - React-Core
   - Yoga (1.14.0)
@@ -610,7 +610,7 @@ SPEC CHECKSUMS:
   React-utils: bcb57da67eec2711f8b353f6e3d33bd8e4b2efa3
   ReactCommon: 3ccb8fb14e6b3277e38c73b0ff5e4a1b8db017a9
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
-  weavr-react-native: 0dbb2dc65453caac2cb1fc84b60598d2d29f055a
+  weavr-react-native: 48b9d1dff96d70c869a80f3fe2bcb4b846e8fe66
   Yoga: 8796b55dba14d7004f980b54bcc9833ee45b28ce
 
 PODFILE CHECKSUM: 17cab8344dd827f2b6fffe697c8afdbb821bf4ee

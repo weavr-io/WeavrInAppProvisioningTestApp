@@ -49,7 +49,7 @@ function App(): JSX.Element {
     console.log('Checking for Can Add to Wallet');
 
     // Perform a card status check to see if card can be added
-    canAddCardToWallet('6751', 'mastercard', 'phone').then(res => {
+    canAddCardToWallet('8632', 'mastercard', 'phone').then(res => {
       console.log(res);
       Alert.alert('Can Add to Wallet', res);
     });
@@ -83,11 +83,11 @@ function App(): JSX.Element {
           androidAssetSource={assetSource}
           iOSButtonStyle="onLightBackground"
           style={styles.payButton}
-          cardHolderName={'<card holder name>'}
-          cardDescription="test iOS wallet extension"
-          cardLastFour={'<panLastFour>'}
+          cardHolderName={'Selvaganapathy Chinnakalai'}
+          cardDescription="Weavr card to wallet"
+          cardLastFour={'8632'}
           cardBrand={'mastercard'}
-          cardId={'<cardToken>'}
+          cardId={'113090394972422160'}
           authenticationToken={token}
           // debug
           onComplete={({error}) => {

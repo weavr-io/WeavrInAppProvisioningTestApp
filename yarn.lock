@@ -2016,9 +2016,10 @@
     "@typescript-eslint/types" "5.62.0"
     eslint-visitor-keys "^3.3.0"
 
-"@weavr-io/push-provisioning-react-native@https://github.com/weavr-io/mobile-sdk-provisioning-react-native.git#DEV-8226-react-native-i-os-wallet-extension-update":
-  version "2.1.0"
-  resolved "https://github.com/weavr-io/mobile-sdk-provisioning-react-native.git#7a7e3dd60d8ee2ffeed2fb8e8521e043c0d66496"
+"@weavr-io/push-provisioning-react-native@2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@weavr-io/push-provisioning-react-native/-/push-provisioning-react-native-2.3.0.tgz#8f80e336395a7a22a9de2bd31c4c64aa43d39090"
+  integrity sha512-79R4XiKbWcy7AI2RM42m1b4G+ZtUmuDzORq2FxNcXBNPk5VlvRr5bu8oAFc52FKTkmeEmlJv1zwBtYMiFye2IA==
 
 abort-controller@^3.0.0:
   version "3.0.0"

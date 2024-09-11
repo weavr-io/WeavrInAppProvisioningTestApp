@@ -45,12 +45,6 @@ target 'WeavrInAppProvisioningTestApp' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'WeavrInAppProvisioningTestAppTests' do
-    inherit! :complete
-    # Pods for testing
-  end
-
-
   $dynamic_frameworks = ['Alamofire', 'ObjectMapper', 'AlamofireObjectMapper', 'EasyPeasy', 'ApplePayProvisioning']
   pre_install do |installer|
    installer.pod_targets.each do |pod|
