@@ -71,7 +71,7 @@
 		452258282C80818B002275E3 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		4522582B2C80818B002275E3 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		4522582D2C80818C002275E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4522583C2C8081A9002275E3 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		4522583C2C8081A9002275E3 /* IntentHandlerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandlerUI.swift; sourceTree = "<group>"; };
 		4522583E2C8081A9002275E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		452258442C8081A9002275E3 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		452258802C808200002275E3 /* WalletExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WalletExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,7 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				452258A32C80858C002275E3 /* WalletExtensionUI.entitlements */,
-				4522583C2C8081A9002275E3 /* IntentHandler.swift */,
+				4522583C2C8081A9002275E3 /* IntentHandlerUI.swift */,
 				4522583E2C8081A9002275E3 /* Info.plist */,
 			);
 			path = WalletExtensionUI;

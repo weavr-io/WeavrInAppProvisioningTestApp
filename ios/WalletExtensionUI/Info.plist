@@ -4,17 +4,12 @@
 <dict>
 	<key>NSExtension</key>
 	<dict>
-		<key>NSExtensionAttributes</key>
-		<dict>
-			<key>IntentsSupported</key>
-			<array>
-				<string>INSendMessageIntent</string>
-			</array>
-		</dict>
 		<key>NSExtensionMainStoryboard</key>
 		<string>MainInterface</string>
 		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.intents-ui-service</string>
+		<string>com.apple.PassKit.issuer-provisioning.authorization</string>
+		<key>NSExtensionPrincipalClass</key>
+		<string>$(PRODUCT_MODULE_NAME).IntentHandlerUI</string>
 	</dict>
 </dict>
 </plist>
